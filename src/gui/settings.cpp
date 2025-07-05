@@ -3463,23 +3463,15 @@ void FurnaceGUI::drawSettings() {
 
 	ImGui::Text(_("Note Notation:"));
 	ImGui::Indent();
-	if (ImGui::RadioButton(_("English#nnES"), settings.noteNotation==0)) {
+	if (ImGui::RadioButton(_("English#nnEN"), settings.noteNotation==0)) {
 	  settings.noteNotation=0;
 	  settingsChanged=true;
 	}
-	if (ImGui::RadioButton(_("English (Flat)#nnEF"), settings.noteNotation==1)) {
-	  settings.noteNotation=1;
-	  settingsChanges=true;
-	}
-	if (ImGui::RadioButton(_("German#nnGS"), settings.noteNotation==2)) {
+	if (ImGui::RadioButton(_("German#nnDE"), settings.noteNotation==1)) {
 	  settings.noteNotation=2;
 	  settingsChanges=true;
 	}
-	if (ImGui::RadioButton(_("German (Flat)#nnGF"), settings.noteNotation==3)) {
-	  settings.noteNotation=3;
-	  settingsChanges=true;
-	}
-	if (ImGui::RadioButton(_("Chromatic (Mutou)#nnCM"), settings.noteNotation==4)) {
+	if (ImGui::RadioButton(_("Chromatic (Mutou)#nnCM"), settings.noteNotation==2)) {
 	  settings.noteNotation=4;
 	  settingsChanges=true;
 	}
