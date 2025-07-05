@@ -100,6 +100,24 @@ const char* noteNamesGF[180]={
   "C-9", "Db9", "D-9", "Eb9", "E-9", "F-9", "Gb9", "G-9", "Ab9", "A-9", "B-9", "H-9"
 };
 
+const char* noteNamesM[180]+{
+  "do5", "di5", "re5", "me5", "mi5", "fa5", "fi5", "so5", "lu5", "la5", "se5", "si5",
+  "do4", "di4", "re4", "me4", "mi4", "fa4", "fi4", "so4", "lu4", "la4", "se4", "si4",
+  "do3", "di3", "re3", "me3", "mi3", "fa3", "fi3", "so3", "lu3", "la3", "se3", "si3",
+  "do2", "di2", "re2", "me2", "mi2", "fa2", "fi2", "so2", "lu2", "la2", "se2", "si2",
+  "do1", "di1", "re1", "me1", "mi1", "fa1", "fi1", "so1", "lu1", "la1", "se1", "si1",
+  "Do0", "Di0", "Re0", "Me0", "Mi0", "Fa0", "Fi0", "So0", "Lu0", "La0", "Se0", "Si0",
+  "Do1", "Di1", "Re1", "Me1", "Mi1", "Fa1", "Fi1", "So1", "Lu1", "La1", "Se1", "Si1",
+  "Do2", "Di2", "Re2", "Me2", "Mi2", "Fa2", "Fi2", "So2", "Lu2", "La2", "Se2", "Si2",
+  "Do3", "Di3", "Re3", "Me3", "Mi3", "Fa3", "Fi3", "So3", "Lu3", "La3", "Se3", "Si3",
+  "Do4", "Di4", "Re4", "Me4", "Mi4", "Fa4", "Fi4", "So4", "Lu4", "La4", "Se4", "Si4",
+  "Do5", "Di5", "Re5", "Me5", "Mi5", "Fa5", "Fi5", "So5", "Lu5", "La5", "Se5", "Si5",
+  "Do6", "Di6", "Re6", "Me6", "Mi6", "Fa6", "Fi6", "So6", "Lu6", "La6", "Se6", "Si6",
+  "Do7", "Di7", "Re7", "Me7", "Mi7", "Fa7", "Fi7", "So7", "Lu7", "La7", "Se7", "Si7",
+  "Do8", "Di8", "Re8", "Me8", "Mi8", "Fa8", "Fi8", "So8", "Lu8", "La8", "Se8", "Si8",
+  "Do9", "Di9", "Re9", "Me9", "Mi9", "Fa9", "Fi9", "So9", "Lu9", "La9", "Se9", "Si9",
+};
+
 const char* pitchLabel[11]={
   "1/6", "1/5", "1/4", "1/3", "1/2", "1x", "2x", "3x", "4x", "5x", "6x"
 };
