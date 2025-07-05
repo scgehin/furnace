@@ -114,12 +114,16 @@ const char* FurnaceGUI::noteName(short note, short octave) {
   if (seek<0 || seek>=180) {
     return "???";
   }
-  if (settings.flatNotes) {
-    if (settings.germanNotation) return noteNamesGF[seek];
-    return noteNamesF[seek];
+  switch (settings.noteNotation) {
+    case 1:
+      if (settings.flatNotes) return noteNamesGF[seek];
+      return noteNamesG[seek];
+    case 2:
+      return noteNamesM[seek];
+    default:
+      if (settings.flatNotes) return noteNamesF[seek];
+      return noteNames[seek];
   }
-  if (settings.germanNotation) return noteNamesG[seek];
-  return noteNames[seek];
 }
 
 bool FurnaceGUI::decodeNote(const char* what, short& note, short& octave) {
