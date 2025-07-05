@@ -5109,7 +5109,7 @@ void FurnaceGUI::readConfig(DivConfig& conf, FurnaceGUISettingGroups groups) {
     settings.chipNames=conf.getInt("chipNames",0);
     settings.overflowHighlight=conf.getInt("overflowHighlight",0);
     settings.flatNotes=conf.getInt("flatNotes",0);
-    settings.germanNotation=conf.getInt("germanNotation",0);
+    settings.noteNotation=conf.getInt("noteNotation",0);
 
     settings.frameBorders=conf.getInt("frameBorders",0);
 
@@ -5297,7 +5297,7 @@ void FurnaceGUI::readConfig(DivConfig& conf, FurnaceGUISettingGroups groups) {
   clampSetting(settings.chipNames,0,1);
   clampSetting(settings.overflowHighlight,0,1);
   clampSetting(settings.flatNotes,0,1);
-  clampSetting(settings.germanNotation,0,1);
+  clampSetting(settings.noteNotation,0,2);
   clampSetting(settings.stepOnDelete,0,1);
   clampSetting(settings.scrollStep,0,1);
   clampSetting(settings.sysSeparators,0,1);
@@ -5699,7 +5699,7 @@ void FurnaceGUI::writeConfig(DivConfig& conf, FurnaceGUISettingGroups groups) {
     conf.set("chipNames",settings.chipNames);
     conf.set("overflowHighlight",settings.overflowHighlight);
     conf.set("flatNotes",settings.flatNotes);
-    conf.set("germanNotation",settings.germanNotation);
+    conf.set("noteNotation",settings.noteNotation);
 
     conf.set("frameBorders",settings.frameBorders);
 
