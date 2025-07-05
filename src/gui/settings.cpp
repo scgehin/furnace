@@ -3461,11 +3461,29 @@ void FurnaceGUI::drawSettings() {
           settingsChanged=true;
         }
 
-        bool germanNotationB=settings.germanNotation;
-        if (ImGui::Checkbox(_("Use German notation"),&germanNotationB)) {
-          settings.germanNotation=germanNotationB;
-          settingsChanged=true;
-        }
+	ImGui::Text(_("Note Notation:"));
+	ImGui::Indent();
+	if (ImGui::RadioButton(_("English#nnES"), settings.noteNotation==0)) {
+	  settings.noteNotation=0;
+	  settingsChanged=true;
+	}
+	if (ImGui::RadioButton(_("English (Flat)#nnEF"), settings.noteNotation==1)) {
+	  settings.noteNotation=1;
+	  settingsChanges=true;
+	}
+	if (ImGui::RadioButton(_("German#nnGS"), settings.noteNotation==2)) {
+	  settings.noteNotation=2;
+	  settingsChanges=true;
+	}
+	if (ImGui::RadioButton(_("German (Flat)#nnGF"), settings.noteNotation==3)) {
+	  settings.noteNotation=3;
+	  settingsChanges=true;
+	}
+	if (ImGui::RadioButton(_("Chromatic (Mutou)#nnCM"), settings.noteNotation==4)) {
+	  settings.noteNotation=4;
+	  settingsChanges=true;
+	}
+	ImGui::Unindent();
 
         // SUBSECTION CHANNEL
         CONFIG_SUBSECTION(_("Channel"));
