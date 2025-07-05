@@ -3468,11 +3468,11 @@ void FurnaceGUI::drawSettings() {
 	  settingsChanged=true;
 	}
 	if (ImGui::RadioButton(_("German#nnDE"), settings.noteNotation==1)) {
-	  settings.noteNotation=2;
+	  settings.noteNotation=1;
 	  settingsChanged=true;
 	}
 	if (ImGui::RadioButton(_("Chromatic (Mutou)#nnCM"), settings.noteNotation==2)) {
-	  settings.noteNotation=4;
+	  settings.noteNotation=2;
 	  settingsChanged=true;
 	}
 	ImGui::Unindent();
