@@ -2120,7 +2120,7 @@ class FurnaceGUI {
       allowEditDocking(1),
       chipNames(0),
       overflowHighlight(0),
-      germanNotation(0),
+      noteNotation(0),
       stepOnDelete(0),
       scrollStep(0),
       sysSeparators(1),
